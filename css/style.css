@@ -36,12 +36,14 @@ body {
 	font-size: 40px;
 	color: white;
 	text-align: center;
+	text-shadow: 1px 1px #888c91;
 }
 
 .text {
 	font-size: 18px;
 	color: white;
 	line-height: 200%;
+	text-shadow: 1px 1px #888c91;
 }
 
 .container {
@@ -55,7 +57,7 @@ body {
 }
 
 .data-background {
-	background-color: rgba(0, 118, 153,0.5);
+	background-color: rgba(0, 0, 0,0.5);
 	height: 100%;
 }
 
@@ -74,7 +76,7 @@ div.credit-box {
 }
 
 .flex-container {
-    
+    margin-top: 50px;
     display: -webkit-flex;
     display: flex;
     width: 100%;
@@ -82,7 +84,7 @@ div.credit-box {
 }
 
 .flex-item {
-    background-color: rgba(0, 118, 153,0.5);
+    background-color: rgba(0, 0, 0,0.5);
     width: 25%;
     height: 200px;
     margin: 10px;
@@ -102,15 +104,15 @@ div.credit-box {
 }
 
 .resources-background {
-	background-color: rgba(0, 118, 153,0.5);
-	height: 500px;
+	background-color: rgba(0, 0, 0,0.5);
+	height: 100%;
 }
 
 .contact{
-	font-size: 50px;
+	font-size: 30px;
 	color: black;
 }
 
 a{
-	color: #2D2F3A;
+	color: #fff;
 }
