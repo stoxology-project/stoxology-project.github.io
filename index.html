@@ -43,7 +43,6 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
             <li><a href="#intro">Intro</a></li>
             <li><a href="#data">Data</a></li>
             <li><a href="#credit">Credit</a></li>
@@ -58,6 +57,7 @@
       <div class="jumbotron">
         <div class="container">
           <img class ="logo-img" src="img/stoxology_logo.png" alt="Stoxology Logo">
+          <div class ="main-title">Impact of news on stock prices visualised</div> 
         </div>
       </div>
     </section>
@@ -65,23 +65,35 @@
     <section>
       <div id="intro" class="container">
         <div class ="wrap">
-          <div class="title">Stock Prices</div>
+          <div class="title">Information is money</div>
           <div class="text">
-            <p>In economics and financial theory, analysts use random walk techniques to model behavior of asset prices, in particular share prices on stock markets, currency exchange rates and commodity prices. This practice has its basis in the presumption that investors act rationally and without biases, and that at any moment they estimate the value of an asset based on future expectations. Under these conditions, all existing information affects the price, which changes only when new information comes out. By definition, new information appears randomly and influences the asset price randomly.
 
-            Empirical studies have demonstrated that prices do not completely follow random walks.[1] Low serial correlations (around 0.05) exist in the short term, and slightly stronger correlations over the longer term. Their sign and the strength depend on a variety of factors.</p>
+            <p>In the world of financial theories there are two types of people: those who believe in efficient markets and those who don't. Market efficiency means that prices incorporate the knowledge of the public, we often hear, for example, that certain actions in the world are priced in the stock as soon as it happens (i.e. new iPhone comes out, the stock movements reflect the public opinion). However, some are inexorably chasing for arbitrage and market inefficiency.</p>
 
-            <p>Researchers have found that some of the biggest price deviations from random walks result from seasonal and temporal patterns. In particular, returns in January significantly exceed those in other months (January effect) and on Mondays stock prices go down more than on any other day. Observers have noted these effects in many different markets for more than half a century, but without succeeding in giving a completely satisfactory explanation for their persistence.</p>
+            <p>With the Stoxology project we wanted to find a visual solution that helps the investigation of price-information correlation. It is up to a data scientist to find causality between news and stock price, or prove the opposite. What we are aiming at is facilitating this process. We believe that data visualisation is a tool that should not only be used for presenting results but also to discover new connections in the data.</p>
 
-            <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
-            <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="data-background">
+      <div id="data" class="container">
+        <div class ="wrap">
+          <div class="title">The Data</div>
+          <div class="text">
+            <p>We chose Lockheed Martin Corporation, a US defense and security company, traded in the New York Stock Exchange. Its stock has been performing exceptionally in the past year, despite the turmoil in all other markets. We wanted to know how the war related news in the world affect the stock price.</p>
+            <p>We followed the twitter account of the Institute for the Study of War in Washington, captured the news articles they posted together with the number of re-tweets and likes of the actual post.</p>
+            <p>The result is presented below. Each bubble shows the price level at a certain day. The bubble size represents the number of re-tweets and likes. If you hover over a bubble, a most important keyword of the news article will show together with the impact in price.</p>
+
+
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div id="data" class="container">
+      <div id="visual" class="container">
         <div class ="wrap">
           <div class="title">Lockheed Martin Corporation 10/2015 - 02/2016</div>
           <div class="diagram"></div>
