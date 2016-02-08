@@ -17,6 +17,9 @@
     <!-- Custom styles for d3 -->
     <link href="css/stox-style.css" rel="stylesheet">
 
+    <!-- Awesome Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
@@ -45,6 +48,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#data">Data</a></li>
+            <li><a href="#visual">Visual</a></li>
             <li><a href="#credit">Credit</a></li>
             <li><a href="#resources">Resources</a></li>
           </ul>
@@ -67,17 +71,15 @@
         <div class ="wrap">
           <div class="title">Information is money</div>
           <div class="text">
-
             <p>In the world of financial theories there are two types of people: those who believe in efficient markets and those who don't. Market efficiency means that prices incorporate the knowledge of the public, we often hear, for example, that certain actions in the world are priced in the stock as soon as it happens (i.e. new iPhone comes out, the stock movements reflect the public opinion). However, some are inexorably chasing for arbitrage and market inefficiency.</p>
 
             <p>With the Stoxology project we wanted to find a visual solution that helps the investigation of price-information correlation. It is up to a data scientist to find causality between news and stock price, or prove the opposite. What we are aiming at is facilitating this process. We believe that data visualisation is a tool that should not only be used for presenting results but also to discover new connections in the data.</p>
-
           </div>
         </div>
       </div>
     </section>
 
-        <section class="data-background">
+    <section class="data-background">
       <div id="data" class="container">
         <div class ="wrap">
           <div class="title">The Data</div>
@@ -85,8 +87,7 @@
             <p>We chose Lockheed Martin Corporation, a US defense and security company, traded in the New York Stock Exchange. Its stock has been performing exceptionally in the past year, despite the turmoil in all other markets. We wanted to know how the war related news in the world affect the stock price.</p>
             <p>We followed the twitter account of the Institute for the Study of War in Washington, captured the news articles they posted together with the number of re-tweets and likes of the actual post.</p>
             <p>The result is presented below. Each bubble shows the price level at a certain day. The bubble size represents the number of re-tweets and likes. If you hover over a bubble, a most important keyword of the news article will show together with the impact in price.</p>
-
-
+            <p>Hope you will have fun playing!</p>
           </div>
         </div>
       </div>
@@ -105,11 +106,52 @@
       <div id="credit" class="container">
         <div class ="wrap">
           <div class="title">Credit</div>
-          <ul class="credit-list">
-              <li>J Butler</li>
-              <li>Jaime Clanger</li>
-              <li>Nhim Kova</li>
-            </ul>
+          <div class="flex-container">
+            <div class= "flex-item">
+              <div class="credit-name">James Butler</div>
+              <div class="hashtag">#backend #java #data #architecture</div>
+              <div class="contact">
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+            <div class= "flex-item">
+              <div class="credit-name">Jaime Clinton</div>
+              <div class="hashtag">#backend #java #data #architecture</div>
+              <div class="contact">
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+            <div class= "flex-item">
+              <div class="credit-name">Nhim Kova</div>
+              <div class="hashtag">#python #d3 #data #visual</div>
+              <div class="contact">
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+            <div class= "flex-item">
+              <div class="credit-name">Sandra Szenti</div>
+              <div class="hashtag">#frontend #javascript</div>
+              <div class="contact">
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources-background">
+      <div id="resources" class="container">
+        <div class ="wrap">
+          <div class="title">Resources</div>
+          <div class="text">
+            <p>We chose Lockheed Martin Corporation, a US defense and security company, traded in the New York Stock Exchange. Its stock has been performing exceptionally in the past year, despite the turmoil in all other markets. We wanted to know how the war related news in the world affect the stock price.</p>
+            
+          </div>
         </div>
       </div>
     </section>

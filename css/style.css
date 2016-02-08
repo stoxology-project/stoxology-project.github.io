@@ -67,3 +67,50 @@ body {
 .credit {
 	height: 500px;
 }
+
+div.credit-box {
+	display: flex;
+	width: 30%;
+}
+
+.flex-container {
+    
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.flex-item {
+    background-color: rgba(0, 118, 153,0.5);
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.credit-name {
+	font-size: 17px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+
+.hashtag {
+	color: #66ff66;
+}
+
+.resources-background {
+	background-color: rgba(0, 118, 153,0.5);
+	height: 500px;
+}
+
+.contact{
+	font-size: 50px;
+	color: black;
+}
+
+a{
+	color: #2D2F3A;
+}
