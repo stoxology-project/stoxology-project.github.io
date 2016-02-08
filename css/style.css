@@ -44,6 +44,7 @@ body {
 	color: white;
 	line-height: 200%;
 	text-shadow: 1px 1px #888c91;
+	margin-top: 30px;
 }
 
 .container {
@@ -64,6 +65,7 @@ body {
 .diagram {
 	display:block;
 	margin: auto;
+	background-color: rgba(0, 0, 0,0.5);
 }
 
 .credit {
@@ -80,7 +82,7 @@ div.credit-box {
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 .flex-item {
@@ -115,4 +117,8 @@ div.credit-box {
 
 a{
 	color: #fff;
+}
+
+.cast {
+	text-align: center;
 }
