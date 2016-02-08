@@ -63,35 +63,42 @@
     </section>
 
     <section>
-      <div id="intro" class="container intro">
-        <div class="title">Stock Prices</div>
-        <div class="text">
-          <p>In economics and financial theory, analysts use random walk techniques to model behavior of asset prices, in particular share prices on stock markets, currency exchange rates and commodity prices. This practice has its basis in the presumption that investors act rationally and without biases, and that at any moment they estimate the value of an asset based on future expectations. Under these conditions, all existing information affects the price, which changes only when new information comes out. By definition, new information appears randomly and influences the asset price randomly.
+      <div id="intro" class="container">
+        <div class ="wrap">
+          <div class="title">Stock Prices</div>
+          <div class="text">
+            <p>In economics and financial theory, analysts use random walk techniques to model behavior of asset prices, in particular share prices on stock markets, currency exchange rates and commodity prices. This practice has its basis in the presumption that investors act rationally and without biases, and that at any moment they estimate the value of an asset based on future expectations. Under these conditions, all existing information affects the price, which changes only when new information comes out. By definition, new information appears randomly and influences the asset price randomly.
 
-          Empirical studies have demonstrated that prices do not completely follow random walks.[1] Low serial correlations (around 0.05) exist in the short term, and slightly stronger correlations over the longer term. Their sign and the strength depend on a variety of factors.</p>
+            Empirical studies have demonstrated that prices do not completely follow random walks.[1] Low serial correlations (around 0.05) exist in the short term, and slightly stronger correlations over the longer term. Their sign and the strength depend on a variety of factors.</p>
 
-          <p>Researchers have found that some of the biggest price deviations from random walks result from seasonal and temporal patterns. In particular, returns in January significantly exceed those in other months (January effect) and on Mondays stock prices go down more than on any other day. Observers have noted these effects in many different markets for more than half a century, but without succeeding in giving a completely satisfactory explanation for their persistence.</p>
+            <p>Researchers have found that some of the biggest price deviations from random walks result from seasonal and temporal patterns. In particular, returns in January significantly exceed those in other months (January effect) and on Mondays stock prices go down more than on any other day. Observers have noted these effects in many different markets for more than half a century, but without succeeding in giving a completely satisfactory explanation for their persistence.</p>
 
-          <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
-          <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
-          
+            <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
+            <p> Technical analysis uses most of the anomalies to extract information on future price movements from historical data. But some economists, for example Eugene Fama, argue that most of these patterns occur accidentally, rather than as a result of irrational or inefficient behavior of investors: the huge amount of data available to researchers for analysis allegedly causes the fluctuations.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div id="data" class="title">Lockheed Martin Corporation 10/2015 - 02/2016</div>
-      <div class="diagram"></div>
+      <div id="data" class="container">
+        <div class ="wrap">
+          <div class="title">Lockheed Martin Corporation 10/2015 - 02/2016</div>
+          <div class="diagram"></div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <div id="credit" class="container credit">
-        <div class="title">Credit</div>
-        <ul class="credit-list">
-            <li>J Butler</li>
-            <li>Jaime Clanger</li>
-            <li>Nhim Kova</li>
-          </ul>
+      <div id="credit" class="container">
+        <div class ="wrap">
+          <div class="title">Credit</div>
+          <ul class="credit-list">
+              <li>J Butler</li>
+              <li>Jaime Clanger</li>
+              <li>Nhim Kova</li>
+            </ul>
+        </div>
       </div>
     </section>
     
@@ -103,9 +110,9 @@
       //Date parser
         var parseDate = d3.time.format("%Y/%m/%d");
 
-        var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        var margin = {top: 20, right: 20, bottom: 50, left: 40},
             width = 960 - margin.left - margin.right,
-            height = 450 - margin.top - margin.bottom;
+            height = 500 - margin.top - margin.bottom;
 
         var x = d3.time.scale.utc()
             .range([0, width]);
@@ -178,6 +185,12 @@
               .attr("class", "x axis")
               .attr("transform", "translate(0," + height + ")")
               .call(xAxis)
+            .selectAll("text")
+              .attr("y", 0)
+              .attr("x", 9)
+              .attr("dy", ".35em")
+              .attr("transform", "rotate(45)")
+              .style("text-anchor", "start")
             .append("text")
               .attr("class", "label")
               .attr("x", width)
