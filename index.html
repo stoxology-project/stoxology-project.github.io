@@ -286,6 +286,7 @@
               .on("mouseout", function(d) {
                 d3.select(this).style("fill", function(d) { return color(d.sentiment); });
                 d3.select(this).moveToBack();
+                tip.hide();
             } );
 
             var line = d3.svg.line()
