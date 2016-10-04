@@ -5,6 +5,12 @@
   shape-rendering: crispEdges;
 }
 
+.line {
+  fill: none;
+  stroke: yellow;
+  stroke-width: 1.5px;
+}
+
 .axis text {
    fill: white;
 }

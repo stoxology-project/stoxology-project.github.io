@@ -288,6 +288,15 @@
                 d3.select(this).moveToBack();
             } );
 
+            var line = d3.svg.line()
+              .x(function(d) { return x(d.date); })
+              .y(function(d) { return y(d.price); });
+
+            svg.append("path")
+              .datum(data)
+              .attr("class", "line")
+              .attr("d", line);
+
           var legend = svg.selectAll(".legend")
               .data(color.domain())
             .enter().append("g")
